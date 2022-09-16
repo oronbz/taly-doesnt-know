@@ -9,10 +9,13 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        List {
-            ForEach(items) { item in
-                Text("What is **\(item.name)**?")
+        NavigationView {
+            List {
+                ForEach(items) { item in
+                    Text("What is **\(item.name)**?")
+                }
             }
+            .navigationTitle("Taly Doesn't Know")
         }
     }
 }
