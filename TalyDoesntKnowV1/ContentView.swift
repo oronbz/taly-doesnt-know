@@ -10,9 +10,9 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         List {
-            Text("What is **404**?")
-            Text("What is **API**?")
-            Text("What is **Application**?")
+            ForEach(items) { item in
+                Text("What is **\(item.name)**?")
+            }
         }
     }
 }
