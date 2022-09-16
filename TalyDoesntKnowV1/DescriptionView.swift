@@ -11,7 +11,12 @@ struct DescriptionView: View {
     let item: Item
     
     var body: some View {
-        Text("Hello, World!")
+        VStack {
+            Text(item.description)
+                .bold()
+                .padding()
+            Spacer()
+        }
     }
 }
 
