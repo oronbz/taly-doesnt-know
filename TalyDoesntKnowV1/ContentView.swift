@@ -13,7 +13,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List {
-                ForEach(items) { item in
+                ForEach(searchResults) { item in
                     NavigationLink {
                         DescriptionView(item: item)
                     } label: {
@@ -25,6 +25,14 @@ struct ContentView: View {
             .searchable(text: $searchText)
         }
         .accentColor(.white)
+    }
+    
+    var searchResults: [Item] {
+        if searchText.isEmpty {
+            return items
+        } else {
+            return items.filter { $0.name.contains(searchText) }
+        }
     }
 }
 
