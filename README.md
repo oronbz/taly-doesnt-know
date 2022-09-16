@@ -1,8 +1,9 @@
+#
 # Taly Doesn't Know
+A sample app built for a blitz talk on how to start coding with SwiftUI
 
-# Screenshots
 
----
+## Screenshots
 
 ![Screen Shot 2022-09-15 at 12.46.11.png](screenshots/Screen_Shot_2022-09-15_at_12.46.11.png)
 
@@ -10,9 +11,7 @@
 
 ![Screen Shot 2022-09-15 at 12.51.06.png](screenshots/Screen_Shot_2022-09-15_at_12.51.06.png)
 
-# Tutorial
-
----
+## Tutorial
 
 1. Dark mode (`preferredColorScheme`) - ⇧⌘A in the simulator
 2. Change view to `Text` **only** - “What is **Application**?” (** like whatsapp)
