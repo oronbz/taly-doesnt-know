@@ -17,11 +17,11 @@ struct ContentView: View {
                     } label: {
                         Text("What is **\(item.name)**?")
                     }
-
                 }
             }
             .navigationTitle("Taly Doesn't Know")
         }
+        .accentColor(.white)
     }
 }
 
