@@ -9,7 +9,11 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("What is **Application**?")
+        List {
+            Text("What is **404**?")
+            Text("What is **API**?")
+            Text("What is **Application**?")
+        }
     }
 }
 
