@@ -17,13 +17,16 @@ struct DescriptionView: View {
                 .padding()
             Spacer()
         }
+        .navigationTitle(item.name)
+        .toolbarBackground(.orange, for: .navigationBar)
+        .toolbarBackground(.visible, for: .navigationBar)
     }
 }
 
 struct DescriptionView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            DescriptionView(item: items[0])
+            DescriptionView(item: items[2])
                 .preferredColorScheme(.dark)
         }
     }
