@@ -12,7 +12,12 @@ struct ContentView: View {
         NavigationView {
             List {
                 ForEach(items) { item in
-                    Text("What is **\(item.name)**?")
+                    NavigationLink {
+                        DescriptionView(item: item)
+                    } label: {
+                        Text("What is **\(item.name)**?")
+                    }
+
                 }
             }
             .navigationTitle("Taly Doesn't Know")
