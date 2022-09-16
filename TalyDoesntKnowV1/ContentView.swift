@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var searchText: String = ""
+    
     var body: some View {
         NavigationView {
             List {
@@ -20,6 +22,7 @@ struct ContentView: View {
                 }
             }
             .navigationTitle("Taly Doesn't Know")
+            .searchable(text: $searchText)
         }
         .accentColor(.white)
     }
